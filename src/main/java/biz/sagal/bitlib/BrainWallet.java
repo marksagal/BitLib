@@ -30,20 +30,18 @@ public class BrainWallet {
 
     /**
      * Gets address
-     * @return Wallet address
+     * @return Address
      */
-    public final String getAddress() {
-        final Address address = this.eckey.toAddress(NetworkParameters.prodNet());
-        return address.toString();
+    public final Address getAddress() {
+        return this.eckey.toAddress(NetworkParameters.prodNet());
     }
 
     /**
      * Gets private key
-     * @return Wallet private key (WIF)
+     * @return DumpedPrivateKey
      */
-    public final String getPrivateKey() {
-        final DumpedPrivateKey privateKey = this.eckey.getPrivateKeyEncoded(NetworkParameters.prodNet());
-        return privateKey.toString();
+    public final DumpedPrivateKey getPrivateKey() {
+        return this.eckey.getPrivateKeyEncoded(NetworkParameters.prodNet());
     }
 
     /**

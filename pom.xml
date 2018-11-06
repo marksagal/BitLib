@@ -6,7 +6,7 @@
 
     <groupId>biz.sagal.lib</groupId>
     <artifactId>BitLib</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT.1</version>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.bitcoinj/bitcoinj-core -->
